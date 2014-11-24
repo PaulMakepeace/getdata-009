@@ -47,5 +47,5 @@ activity_mean <- function(data) {
 }
 # setwd('..')
 averages_by_subject_activity <-
-    sapply(split(all_data, sinteraction(all_data$activities, all_data$subjectid)),
+    sapply(split(all_data, interaction(all_data$activities, all_data$subjectid)),
            activity_mean)
